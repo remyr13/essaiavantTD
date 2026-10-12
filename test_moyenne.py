@@ -2,15 +2,16 @@
 
 # NB: Ce fichier contient volontairement des erreurs de qualité de code
 # mais il reste fonctionnel
+import math
+from rich.console import Console
 
 from rich.markdown import Markdown
-from rich.console import Console
 from moyenne import moyenne
-import math
+
 
 def test_moyenne():
     """Vérifie le calcul de la moyenne de deux valeurs."""
-    resultat = moyenne([10, 20])
+    moyenne([10, 20])
     assert moyenne([10, 20]) == 15
 
 
